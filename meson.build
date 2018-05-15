@@ -18,7 +18,7 @@ src = [
 include_dirs = include_directories('src/')
 
 install_headers('src/ed25519.h', subdir:'ed25519')
-lib = library('ed25519',
+lib = static_library('ed25519',
 sources: src,
 include_directories : include_dirs,
 version: version,
