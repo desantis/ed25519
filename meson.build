@@ -22,7 +22,7 @@ lib = static_library('ed25519',
 sources: src,
 include_directories : include_dirs,
 version: version,
-c_args : ['-O2', '-Wall'],
+c_args : ['-Wall'],
 install: true)
 
 ed25519_dep = declare_dependency(include_directories : include_dirs,
